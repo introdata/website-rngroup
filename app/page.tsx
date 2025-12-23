@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 export default function HomePage() {
@@ -42,7 +43,13 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="relative inline-flex w-full items-center justify-center rounded-lg bg-white px-8 py-5 text-base font-extrabold text-[#0A1529] shadow-[0_0_20px_rgba(42,109,181,0.3),inset_0_1px_0_rgba(255,255,255,0.4)] transition-all duration-500 ease-out hover:brightness-110 hover:shadow-[0_0_35px_rgba(42,109,181,0.6),inset_0_1px_0_rgba(255,255,255,0.4)] group-hover:shadow-[0_0_30px_rgba(42,109,181,0.5),inset_0_1px_0_rgba(255,255,255,0.4)] md:text-lg"
                 >
-                  Go to Inmobiliaria
+                  <Image 
+                    src="/logos/reyna-novillo-logo.png" 
+                    alt="Reyna Novillo Inmobiliaria" 
+                    width={200} 
+                    height={50} 
+                    className="h-12 w-auto object-contain"
+                  />
                 </Link>
               </div>
             </div>
@@ -61,7 +68,13 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="relative inline-flex w-full items-center justify-center rounded-lg bg-white px-8 py-5 text-base font-extrabold text-[#0A1529] shadow-[0_0_20px_rgba(42,109,181,0.3),inset_0_1px_0_rgba(255,255,255,0.4)] transition-all duration-500 ease-out hover:brightness-110 hover:shadow-[0_0_35px_rgba(42,109,181,0.6),inset_0_1px_0_rgba(255,255,255,0.4)] group-hover:shadow-[0_0_30px_rgba(42,109,181,0.5),inset_0_1px_0_rgba(255,255,255,0.4)] md:text-lg"
                 >
-                  Go to IntroData
+                  <Image 
+                    src="/logos/introdata-logo.png" 
+                    alt="IntroData BS" 
+                    width={200} 
+                    height={50} 
+                    className="h-10 w-auto object-contain"
+                  />
                 </Link>
               </div>
             </div>
