@@ -33,7 +33,15 @@ export default function HomePage() {
             <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#14284A] to-[#0F1E38] p-8 shadow-[0_0_40px_rgba(42,109,181,0.15)] transition-all duration-500 ease-out hover:translate-y-[-6px] hover:shadow-[0_0_70px_rgba(42,109,181,0.35)] md:p-10">
               <div className="flex min-h-[280px] flex-col justify-between">
                 <div>
-                  <h2 className="mb-4 text-2xl font-bold text-white md:text-3xl">Reyna Novillo Inmobiliaria</h2>
+                  <div className="mb-4 h-12 w-auto md:h-14">
+                    <Image
+                      src="/logos/reyna-novillo-logo.png"
+                      alt="Reyna Novillo Inmobiliaria"
+                      width={300}
+                      height={80}
+                      className="h-full w-auto object-contain object-left brightness-0 invert"
+                    />
+                  </div>
                   <p className="mb-8 text-base text-white/70 md:text-lg">Rentals · Property Management · Real Estate</p>
                 </div>
 
@@ -43,13 +51,7 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="relative inline-flex w-full items-center justify-center rounded-lg bg-white px-8 py-5 text-base font-extrabold text-[#0A1529] shadow-[0_0_20px_rgba(42,109,181,0.3),inset_0_1px_0_rgba(255,255,255,0.4)] transition-all duration-500 ease-out hover:brightness-110 hover:shadow-[0_0_35px_rgba(42,109,181,0.6),inset_0_1px_0_rgba(255,255,255,0.4)] group-hover:shadow-[0_0_30px_rgba(42,109,181,0.5),inset_0_1px_0_rgba(255,255,255,0.4)] md:text-lg"
                 >
-                  <Image 
-                    src="/logos/reyna-novillo-logo.png" 
-                    alt="Reyna Novillo Inmobiliaria" 
-                    width={200} 
-                    height={50} 
-                    className="h-12 w-auto object-contain"
-                  />
+                  Go to Inmobiliaria
                 </Link>
               </div>
             </div>
@@ -58,7 +60,15 @@ export default function HomePage() {
             <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#14284A] to-[#0F1E38] p-8 shadow-[0_0_40px_rgba(42,109,181,0.15)] transition-all duration-500 ease-out hover:translate-y-[-6px] hover:shadow-[0_0_70px_rgba(42,109,181,0.35)] md:p-10">
               <div className="flex min-h-[280px] flex-col justify-between">
                 <div>
-                  <h2 className="mb-4 text-2xl font-bold text-white md:text-3xl">IntroData BS</h2>
+                  <div className="mb-4 h-10 w-auto md:h-12">
+                    <Image
+                      src="/logos/introdata-logo.png"
+                      alt="IntroData BS"
+                      width={300}
+                      height={80}
+                      className="h-full w-auto object-contain object-left brightness-0 invert"
+                    />
+                  </div>
                   <p className="mb-8 text-base text-white/70 md:text-lg">Automation · Data · Artificial Intelligence</p>
                 </div>
 
@@ -68,13 +78,7 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="relative inline-flex w-full items-center justify-center rounded-lg bg-white px-8 py-5 text-base font-extrabold text-[#0A1529] shadow-[0_0_20px_rgba(42,109,181,0.3),inset_0_1px_0_rgba(255,255,255,0.4)] transition-all duration-500 ease-out hover:brightness-110 hover:shadow-[0_0_35px_rgba(42,109,181,0.6),inset_0_1px_0_rgba(255,255,255,0.4)] group-hover:shadow-[0_0_30px_rgba(42,109,181,0.5),inset_0_1px_0_rgba(255,255,255,0.4)] md:text-lg"
                 >
-                  <Image 
-                    src="/logos/introdata-logo.png" 
-                    alt="IntroData BS" 
-                    width={200} 
-                    height={50} 
-                    className="h-10 w-auto object-contain"
-                  />
+                  Go to IntroData
                 </Link>
               </div>
             </div>
