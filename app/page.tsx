@@ -24,64 +24,86 @@ export default function HomePage() {
 
           {/* Accent Phrase - Italic */}
           <p className="mb-16 text-center font-serif text-lg italic text-white/70 md:text-xl">
-            Where do you want to go?
+            ¿Qué tipo de solución estás buscando?
           </p>
 
           {/* Router Section - Two Premium Cards */}
           <div className="grid gap-8 md:grid-cols-2">
             {/* Card A - Real Estate */}
-            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#14284A] to-[#0F1E38] p-8 shadow-[0_0_40px_rgba(42,109,181,0.15)] transition-all duration-500 ease-out hover:translate-y-[-6px] hover:shadow-[0_0_70px_rgba(42,109,181,0.35)] md:p-10">
+            <Link
+              href="https://www.reynanovillo.es/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#14284A] to-[#0F1E38] p-8 shadow-[0_0_40px_rgba(42,109,181,0.15)] transition-all duration-500 ease-out hover:translate-y-[-6px] hover:shadow-[0_0_70px_rgba(42,109,181,0.35)] md:p-10"
+            >
               <div className="flex min-h-[280px] flex-col justify-between">
                 <div>
-                  <div className="mb-4 h-12 w-auto md:h-14">
+                  <div className="mb-6 flex h-16 w-full justify-center md:h-20">
                     <Image
                       src="/logos/reyna-novillo-logo.png"
                       alt="Reyna Novillo Inmobiliaria"
                       width={300}
-                      height={80}
-                      className="h-full w-auto object-contain object-left brightness-0 invert"
+                      height={90}
+                      className="h-full w-auto object-contain brightness-0 invert"
                     />
                   </div>
-                  <p className="mb-8 text-base text-white/70 md:text-lg">Rentals · Property Management · Real Estate</p>
+                  <h3 className="mb-2 text-center text-xl font-bold text-white md:text-2xl">
+                    ¿Buscás una gestión inmobiliaria profesional?
+                  </h3>
+                  <p className="mb-8 text-center text-sm text-white/70 md:text-base">
+                    Gestión integral · Alquileres · Administración · Ventas
+                  </p>
                 </div>
 
-                <Link
-                  href="https://www.reynanovillo.es/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative inline-flex w-full items-center justify-center rounded-lg bg-white px-8 py-5 text-base font-extrabold text-[#0A1529] shadow-[0_0_20px_rgba(42,109,181,0.3),inset_0_1px_0_rgba(255,255,255,0.4)] transition-all duration-500 ease-out hover:brightness-110 hover:shadow-[0_0_35px_rgba(42,109,181,0.6),inset_0_1px_0_rgba(255,255,255,0.4)] group-hover:shadow-[0_0_30px_rgba(42,109,181,0.5),inset_0_1px_0_rgba(255,255,255,0.4)] md:text-lg"
-                >
-                  Go to Inmobiliaria
-                </Link>
+                {/* Hover Reveal Action */}
+                <div className="transform translate-y-4 opacity-0 transition-all duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
+                  <p className="flex justify-center items-center text-base font-normal tracking-wide text-white md:text-lg">
+                    Visitar Sitio Web
+                    <svg className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
 
             {/* Card B - Technology */}
-            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#14284A] to-[#0F1E38] p-8 shadow-[0_0_40px_rgba(42,109,181,0.15)] transition-all duration-500 ease-out hover:translate-y-[-6px] hover:shadow-[0_0_70px_rgba(42,109,181,0.35)] md:p-10">
+            <Link
+              href="https://www.introdatabs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#14284A] to-[#0F1E38] p-8 shadow-[0_0_40px_rgba(42,109,181,0.15)] transition-all duration-500 ease-out hover:translate-y-[-6px] hover:shadow-[0_0_70px_rgba(42,109,181,0.35)] md:p-10"
+            >
               <div className="flex min-h-[280px] flex-col justify-between">
                 <div>
-                  <div className="mb-4 h-10 w-auto md:h-12">
+                  <div className="mb-6 flex h-16 w-full justify-center md:h-20">
                     <Image
                       src="/logos/introdata-logo.png"
                       alt="IntroData BS"
                       width={300}
-                      height={80}
-                      className="h-full w-auto object-contain object-left brightness-0 invert"
+                      height={90}
+                      className="h-full w-auto object-contain brightness-0 invert"
                     />
                   </div>
-                  <p className="mb-8 text-base text-white/70 md:text-lg">Automation · Data · Artificial Intelligence</p>
+                  <h3 className="mb-2 text-center text-xl font-bold text-white md:text-2xl">
+                    ¿Querés optimizar procesos y tomar mejores decisiones?
+                  </h3>
+                  <p className="mb-8 text-center text-sm text-white/70 md:text-base">
+                    Automatización · Datos · IA aplicada · Escalabilidad
+                  </p>
                 </div>
 
-                <Link
-                  href="https://www.introdatabs.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative inline-flex w-full items-center justify-center rounded-lg bg-white px-8 py-5 text-base font-extrabold text-[#0A1529] shadow-[0_0_20px_rgba(42,109,181,0.3),inset_0_1px_0_rgba(255,255,255,0.4)] transition-all duration-500 ease-out hover:brightness-110 hover:shadow-[0_0_35px_rgba(42,109,181,0.6),inset_0_1px_0_rgba(255,255,255,0.4)] group-hover:shadow-[0_0_30px_rgba(42,109,181,0.5),inset_0_1px_0_rgba(255,255,255,0.4)] md:text-lg"
-                >
-                  Go to IntroData
-                </Link>
+                {/* Hover Reveal Action */}
+                <div className="transform translate-y-4 opacity-0 transition-all duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
+                  <p className="flex justify-center items-center text-base font-normal tracking-wide text-white md:text-lg">
+                    Visitar Sitio Web
+                    <svg className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
