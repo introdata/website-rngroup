@@ -1,23 +1,7 @@
-import { ServiceCard } from "@/components/service-card"
+import { ServiceCard } from "@/components/features/service-card"
+import { siteConfig } from "@/lib/site-config"
 
 export default function HomePage() {
-  const services = [
-    {
-      href: "https://www.reynanovillo.es/",
-      logoSrc: "/logos/reyna-novillo-logo.png",
-      logoAlt: "Reyna Novillo Inmobiliaria",
-      title: "¿Buscás una gestión inmobiliaria profesional?",
-      description: "Gestión integral · Alquileres · Administración · Ventas",
-    },
-    {
-      href: "https://www.introdatabs.com/",
-      logoSrc: "/logos/introdata-logo.png",
-      logoAlt: "IntroData BS",
-      title: "¿Querés optimizar procesos y tomar mejores decisiones?",
-      description: "Automatización · Datos · IA aplicada · Escalabilidad",
-    },
-  ]
-
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#050A14] to-[#0A1529] text-white">
       {/* Hero Section - Centered, Full Viewport */}
@@ -35,7 +19,7 @@ export default function HomePage() {
 
           {/* Subtitle */}
           <p className="mb-4 text-center text-xl font-normal tracking-wide text-white/90 md:text-2xl">
-            Real Estate & Technology Solutions
+            {siteConfig.description}
           </p>
 
           {/* Accent Phrase - Italic */}
@@ -45,7 +29,7 @@ export default function HomePage() {
 
           {/* Router Section - Two Premium Cards */}
           <div className="grid gap-8 md:grid-cols-2">
-            {services.map((service, index) => (
+            {siteConfig.services.map((service, index) => (
               <ServiceCard
                 key={index}
                 href={service.href}

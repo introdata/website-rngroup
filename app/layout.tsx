@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Montserrat, Merriweather } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { siteConfig } from "@/lib/site-config"
 import "./globals.css"
 
 const montserrat = Montserrat({
@@ -18,8 +19,8 @@ const merriweather = Merriweather({
 })
 
 export const metadata: Metadata = {
-  title: "RN GROUP | Real Estate & Technology Solutions",
-  description: "Premium institutional holding company - Real Estate and Technology Solutions",
+  title: siteConfig.name,
+  description: siteConfig.description,
   generator: "v0.app",
   icons: {
     icon: [
