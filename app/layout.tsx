@@ -1,16 +1,25 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Montserrat, Merriweather } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
+  variable: "--font-montserrat",
+})
+
+const merriweather = Merriweather({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["italic"],
+  variable: "--font-merriweather",
+})
 
 export const metadata: Metadata = {
-  title: "RN Group | Real Estate & Technology Solutions",
-  description:
-    "RN Group - Umbrella brand for Reyna Novillo Inmobiliaria and IntroData BS. Premium real estate and technology solutions.",
+  title: "RN GROUP | Real Estate & Technology Solutions",
+  description: "Premium institutional holding company - Real Estate and Technology Solutions",
   generator: "v0.app",
   icons: {
     icon: [
@@ -38,7 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`${montserrat.variable} ${merriweather.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

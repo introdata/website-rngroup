@@ -1,39 +1,73 @@
-import { BusinessCard } from "@/components/business-card"
+import Link from "next/link"
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-corporate-bg px-4 py-8">
-      <div className="mx-auto w-full max-w-6xl">
-        {/* Hero Section */}
-        <div className="mb-12 text-center md:mb-16">
-          <h1 className="mb-3 text-4xl font-bold uppercase tracking-tight text-corporate-text md:text-5xl lg:text-6xl">
-            RN GROUP
-          </h1>
-          <p className="mb-6 text-lg text-corporate-text md:text-xl">Real Estate & Technology Solutions</p>
-          <p className="text-base text-corporate-secondary md:text-lg">Where do you want to go?</p>
-        </div>
+    <main className="min-h-screen bg-gradient-to-b from-[#050A14] to-[#0A1529] text-white">
+      {/* Hero Section - Centered, Full Viewport */}
+      <section className="flex min-h-screen flex-col items-center justify-center px-6 py-12">
+        <div className="w-full max-w-7xl">
+          {/* Wordmark */}
+          <div className="mb-6 text-center">
+            <h1 className="inline-flex items-baseline text-6xl font-black tracking-tight md:text-7xl lg:text-8xl">
+              <span className="text-white">RN</span>
+              <span className="ml-2 bg-gradient-to-b from-[#73BDFC] to-[#2A6DB5] bg-clip-text text-transparent">
+                GROUP
+              </span>
+            </h1>
+          </div>
 
-        {/* Split Navigation */}
-        <div className="grid gap-6 md:grid-cols-2 md:gap-8">
-          <BusinessCard
-            title="Reyna Novillo Inmobiliaria"
-            description="Rentals · Property Management · Real Estate"
-            buttonText="Go to Inmobiliaria"
-            href="https://www.reynanovillo.es/"
-          />
-          <BusinessCard
-            title="IntroData BS"
-            description="Automation · Data · Artificial Intelligence"
-            buttonText="Go to IntroData"
-            href="https://www.introdatabs.com/"
-          />
-        </div>
+          {/* Subtitle */}
+          <p className="mb-4 text-center text-xl font-normal tracking-wide text-white/90 md:text-2xl">
+            Real Estate & Technology Solutions
+          </p>
 
-        {/* Optional minimal footer */}
-        <footer className="mt-16 text-center md:mt-20">
-          <p className="text-sm text-corporate-secondary">RN Group</p>
-        </footer>
-      </div>
+          {/* Accent Phrase - Italic */}
+          <p className="mb-16 text-center font-serif text-lg italic text-white/70 md:text-xl">
+            Where do you want to go?
+          </p>
+
+          {/* Router Section - Two Premium Cards */}
+          <div className="grid gap-8 md:grid-cols-2">
+            {/* Card A - Real Estate */}
+            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#14284A] to-[#0F1E38] p-8 shadow-[0_0_40px_rgba(42,109,181,0.15)] transition-all duration-500 ease-out hover:translate-y-[-6px] hover:shadow-[0_0_70px_rgba(42,109,181,0.35)] md:p-10">
+              <div className="flex min-h-[280px] flex-col justify-between">
+                <div>
+                  <h2 className="mb-4 text-2xl font-bold text-white md:text-3xl">Reyna Novillo Inmobiliaria</h2>
+                  <p className="mb-8 text-base text-white/70 md:text-lg">Rentals · Property Management · Real Estate</p>
+                </div>
+
+                <Link
+                  href="https://www.reynanovillo.es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative inline-flex w-full items-center justify-center rounded-lg bg-white px-8 py-5 text-base font-extrabold text-[#0A1529] shadow-[0_0_20px_rgba(42,109,181,0.3),inset_0_1px_0_rgba(255,255,255,0.4)] transition-all duration-500 ease-out hover:brightness-110 hover:shadow-[0_0_35px_rgba(42,109,181,0.6),inset_0_1px_0_rgba(255,255,255,0.4)] group-hover:shadow-[0_0_30px_rgba(42,109,181,0.5),inset_0_1px_0_rgba(255,255,255,0.4)] md:text-lg"
+                >
+                  Go to Inmobiliaria
+                </Link>
+              </div>
+            </div>
+
+            {/* Card B - Technology */}
+            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#14284A] to-[#0F1E38] p-8 shadow-[0_0_40px_rgba(42,109,181,0.15)] transition-all duration-500 ease-out hover:translate-y-[-6px] hover:shadow-[0_0_70px_rgba(42,109,181,0.35)] md:p-10">
+              <div className="flex min-h-[280px] flex-col justify-between">
+                <div>
+                  <h2 className="mb-4 text-2xl font-bold text-white md:text-3xl">IntroData BS</h2>
+                  <p className="mb-8 text-base text-white/70 md:text-lg">Automation · Data · Artificial Intelligence</p>
+                </div>
+
+                <Link
+                  href="https://www.introdatabs.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative inline-flex w-full items-center justify-center rounded-lg bg-white px-8 py-5 text-base font-extrabold text-[#0A1529] shadow-[0_0_20px_rgba(42,109,181,0.3),inset_0_1px_0_rgba(255,255,255,0.4)] transition-all duration-500 ease-out hover:brightness-110 hover:shadow-[0_0_35px_rgba(42,109,181,0.6),inset_0_1px_0_rgba(255,255,255,0.4)] group-hover:shadow-[0_0_30px_rgba(42,109,181,0.5),inset_0_1px_0_rgba(255,255,255,0.4)] md:text-lg"
+                >
+                  Go to IntroData
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
