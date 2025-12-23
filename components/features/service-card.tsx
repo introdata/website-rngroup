@@ -43,7 +43,7 @@ export function ServiceCard({
                 </div>
 
                 {/* Hover Reveal Action */}
-                <div className="transform translate-y-4 opacity-0 transition-all duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
+                <div className="mt-4">
                     <p className="flex justify-center items-center text-base font-normal tracking-wide text-white md:text-lg">
                         Visitar Sitio Web
                         <svg
