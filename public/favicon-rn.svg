@@ -1,0 +1,19 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rn_gradient" x1="90" y1="50" x2="90" y2="130" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#73BDFC"/>
+      <stop offset="1" stop-color="#2A6DB5"/>
+    </linearGradient>
+  </defs>
+  <!-- Fondo institucional oscuro -->
+  <rect width="180" height="180" rx="42" fill="#050A14"/>
+  
+  <!-- "R" en blanco puro, tipografía sólida y seria -->
+  <path d="M40 125V55H74C88.5 55 96 63 96 74.5C96 83.5 91.5 90 83 92.5L98 125H82.5L68.5 94H54.5V125H40ZM54.5 81.5H72.5C79 81.5 82 79 82 74.5C82 70 79 67.5 72.5 67.5H54.5V81.5Z" fill="white"/>
+  
+  <!-- "N" con el degradado de la página -->
+  <path d="M104 125V55H119L141 100.5V55H155V125H140L118 79.5V125H104Z" fill="url(#rn_gradient)"/>
+  
+  <!-- Borde sutil para profundidad premium -->
+  <rect x="1" y="1" width="178" height="178" rx="41" stroke="white" stroke-opacity="0.05" stroke-width="2"/>
+</svg>
