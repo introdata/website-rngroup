@@ -4,8 +4,13 @@ export async function POST(req: Request) {
     try {
         const body = await req.json()
 
-        // Webhook URL from the user
-        const WEBHOOK_URL = "https://automation.introdatabs.com/webhook-test/ed5e1db5-a3ac-4b7e-9fc1-98adc7f83ec2"
+        // Webhook URL from environment variables
+        const WEBHOOK_URL = process.env.CHAT_WEBHOOK_URL
+
+        if (!WEBHOOK_URL) {
+            console.error("CHAT_WEBHOOK_URL is not defined")
+            return NextResponse.json({ error: "Configuration error" }, { status: 500 })
+        }
 
         const response = await fetch(WEBHOOK_URL, {
             method: "POST",
