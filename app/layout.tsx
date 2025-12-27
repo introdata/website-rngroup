@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Montserrat, Merriweather } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { siteConfig } from "@/lib/site-config"
+// import { ChatWidget } from "@/components/features/chat-widget"
 import "./globals.css"
 
 const montserrat = Montserrat({
@@ -21,7 +22,6 @@ const merriweather = Merriweather({
 export const metadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
-  generator: "v0.app",
   icons: {
     icon: [
       {
@@ -50,6 +50,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${montserrat.variable} ${merriweather.variable} font-sans antialiased`}>
         {children}
+        {/* <ChatWidget /> */}
         <Analytics />
       </body>
     </html>
