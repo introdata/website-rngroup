@@ -62,5 +62,9 @@ To run this project locally, follow these steps:
 
 Professional project by **RN GROUP**. All rights reserved.
 
+## 📝 Contact
+
+For inquiries or support, please contact [IntroData BS](mailto:tomas.reyna@introdatabs.com).
+
 ---
 Developed with ❤️ by [IntroData BS](https://www.introdatabs.com/)
